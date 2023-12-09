@@ -1,0 +1,32 @@
+{
+  "name": "hardhatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test test/ArtNFT.js",
+    "test-gallery": "npx hardhat test test/Gallery.js",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deployPMX": "npx hardhat run scripts/deployPMX_token.js",
+    "deployPresale": "npx hardhat run scripts/deployPresale.js",
+    "verify": "npx hardhat run scripts/verify.js",
+    "verifyPMX": "npx hardhat run scripts/verifyPMX.js",
+    "verifyPresale": "npx hardhat run scripts/verifyPresale.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.1",
+    "@openzeppelin/hardhat-upgrades": "^2.3.1",
+    "hardhat": "^2.18.0"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@openzeppelin/contracts": "^5.0.0",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "web3": "^4.1.2"
+  }
+}
